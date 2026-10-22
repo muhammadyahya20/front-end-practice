@@ -1,1 +1,7 @@
-var cities = ["Lahore", "Karachi", "Islamabad", "Quetta", "Peshawar", "Multan"];
+export const cities = [
+    "Lahore",
+    "Karachi",
+    "Islamabad",
+    "Quetta",
+    "Peshawar"
+];

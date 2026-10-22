@@ -63,11 +63,20 @@
 
             <div>
                 <label for="explain">Please explain</label>
-                <textarea name="explain" id="explain" cols="10" rows="10" maxlength="200" placeholder="Please explain" oninput="this.nextElementSibling.querySelector('span') = this.maxLength - this.value.length">
+                <textarea name="explain" id="explain" cols="10" rows="10" maxlength="200" placeholder="Please explain" oninput="this.nextElementSibling.querySelector('span').textContent = this.maxLength - this.value.length">
                 </textarea>
                 <output><span>200</span> maxlength</output>
-
             </div>
+
+            <div>
+                <button type="button" onclick="alert('You just clicked!')">Click Me! 
+                </button> 
+            </div>
+
+            <figure> 
+                <img src="Lemon Chicken.webp" width="320" alt="My Profile Photo"> 
+                <figcaption>A photo of myself on a beach in 2015</figcaption> 
+            </figure>
 
         </form>
     </main>
