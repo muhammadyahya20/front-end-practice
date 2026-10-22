@@ -17,7 +17,7 @@
 
     <!-- JavaScript -->
     <script src="./cities.js" defer></script>
-    <script src="./script.js" defer></script>
+    <script type="module" src="./script.js"></script>
 
     <!-- Open Graph metadata -->
     <!--
@@ -59,6 +59,14 @@
                 <select name="location2" id="location2">
                     <option value="" disabled selected>Please select</option>
                 </select>
+            </div>
+
+            <div>
+                <label for="explain">Please explain</label>
+                <textarea name="explain" id="explain" cols="10" rows="10" maxlength="200" placeholder="Please explain" oninput="this.nextElementSibling.querySelector('span') = this.maxLength - this.value.length">
+                </textarea>
+                <output><span>200</span> maxlength</output>
+
             </div>
 
         </form>
