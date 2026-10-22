@@ -33,3 +33,7 @@ I will practise the following commands regularly:
 - **Description:** Dynamically populate a dropdown using JavaScript.
 - **Technologies:** HTML, JavaScript.
 - **Status:** Completed initial practice.
+
+## Learning goals
+
+Build small projects and improve my front-end development skills through daily practice.
