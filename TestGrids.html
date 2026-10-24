@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Essential metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title and SEO description -->
+    <title>My website</title>
+    <meta name="description" content="A short description of this page.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="gridstyle.css">
+
+    <!-- JavaScript -->
+    <script src="./cities.js" defer></script>
+    <script type="module" src="./script.js"></script>
+
+    <!-- Open Graph metadata -->
+    <!--
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="My website">
+    <meta property="og:description" content="A short description of my website.">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:image" content="https://yourwebsite.com/images/social-preview.jpg">
+    <meta property="og:site_name" content="My website">
+    -->
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    </header>
+
+    <!-- Main content -->
+    <main>
+         <main>
+        <form action="./submit" class="form">
+
+            <div class="form_element">
+            <label for="">Select the number of people</label>
+            <input type="range" id="people" name="people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+            <output>4</output>
+            </div>
+            
+            <div class="form_element">
+                <label for="location">Select location</label>
+                <input type="text id="location" name="location" list="locations">
+                <datalist id="locations">
+                    <option value="downtown">Downtown</option>
+                    <option value="uptown">Uptown</option>
+                </datalist>
+            </div>
+
+            <div class="form_element">
+                <label for="location2">Select location 2</label>
+                <select name="location2" id="location2">
+                    <option value="" disabled selected>Please select</option>
+                </select>
+            </div>
+
+            <div class="form_element">
+                <label for="explain">Please explain</label>
+                <textarea name="explain" id="explain" cols="10" rows="10" maxlength="200" placeholder="Please explain" oninput="this.nextElementSibling.querySelector('span').textContent = this.maxLength - this.value.length"></textarea>
+                <output><span>200</span> maxlength</output>
+            </div>
+
+            
+            <button type="submit" class="form_btn" > Submit Now </button> 
+            
+
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+</body>
+</html>

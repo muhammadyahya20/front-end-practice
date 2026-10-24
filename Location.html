@@ -7,7 +7,7 @@
 
     <!-- Page title and SEO description -->
     <title>My website</title>
-    <meta name="description" content="A short description of this page.">
+    <meta name="description" content="A little lemon resturant website.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./favicon.png">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./style.css">
 
     <!-- JavaScript -->
-    <script src="./cities.js" defer></script>
+    <script src="./cities.js"></script>
     <script type="module" src="./script.js"></script>
 
     <!-- Open Graph metadata -->
@@ -37,15 +37,15 @@
 
     <!-- Main content -->
     <main>
-        <form action="./submit">
+        <form action="./submit" class="form">
 
-            <div>
-            <label for="">Select the number of people</label> <br>
+            <div class="form_element">
+            <label for="">Select the number of people</label>
             <input type="range" id="people" name="people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
             <output>4</output>
             </div>
             
-            <div>
+            <div class="form_element">
                 <label for="location">Select location</label>
                 <input type="text id="location" name="location" list="locations">
                 <datalist id="locations">
@@ -54,31 +54,25 @@
                 </datalist>
             </div>
 
-            <div>
+            <div class="form_element">
                 <label for="location2">Select location 2</label>
                 <select name="location2" id="location2">
                     <option value="" disabled selected>Please select</option>
                 </select>
             </div>
 
-            <div>
+            <div class="form_element">
                 <label for="explain">Please explain</label>
-                <textarea name="explain" id="explain" cols="10" rows="10" maxlength="200" placeholder="Please explain" oninput="this.nextElementSibling.querySelector('span').textContent = this.maxLength - this.value.length">
-                </textarea>
+                <textarea name="explain" id="explain" cols="10" rows="10" maxlength="200" placeholder="Please explain" oninput="this.nextElementSibling.querySelector('span').textContent = this.maxLength - this.value.length"></textarea>
                 <output><span>200</span> maxlength</output>
             </div>
 
-            <div>
-                <button type="button" onclick="alert('You just clicked!')">Click Me! 
-                </button> 
-            </div>
-
-            <figure> 
-                <img src="Lemon Chicken.webp" width="320" alt="My Profile Photo"> 
-                <figcaption>A photo of myself on a beach in 2015</figcaption> 
-            </figure>
+            
+            <button type="submit" class="form_btn" > Submit Now </button> 
+            
 
         </form>
+
     </main>
 
     <!-- Footer -->
