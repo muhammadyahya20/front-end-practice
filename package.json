@@ -1,0 +1,25 @@
+{
+  "name": "first-website-test",
+  "version": "1.0.0",
+  "description": "This repository contains my daily practice as I learn front-end development.",
+  "main": "cities.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadyahya20/front-end-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/muhammadyahya20/front-end-practice/issues"
+  },
+  "homepage": "https://github.com/muhammadyahya20/front-end-practice#readme",
+  "devDependencies": {
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
