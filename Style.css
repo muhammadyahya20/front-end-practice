@@ -1,14 +1,11 @@
  h1 {
     color: #fafafd;
-    background-color: #000000;
+    background-color: #000;
     font-family: Inter, sans-serif;
     font-size: 32px;
     letter-spacing: -2%;
     border: 1px dotted #393842;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 10px;
@@ -32,12 +29,6 @@ p {
     letter-spacing: -0.5px;
 }
 
-th,td {
-    color: #20222b;
-    font-family: Inter, sans-serif;
-    letter-spacing: -0.5px;
-}
-
 a {
     color: #0022b8;
     font-family: Inter, sans-serif;
@@ -50,8 +41,12 @@ table {
     width: 50%;
 }
 
-th, td {
-    border: 1px solid #000000;
+th,
+td {
+    color: #20222b;
+    font-family: Inter, sans-serif;
+    letter-spacing: -0.5px;
+    border: 1px solid #000;
     padding: 5px;
     text-align: left;
 }
@@ -61,11 +56,7 @@ img {
 }
 
 a:hover {
-    color: #ff0000;
-}
-
-.heading {
-    text-align: left;
+    color: #f00;
 }
 
 #location-link {
@@ -74,16 +65,20 @@ a:hover {
     padding-top: 10px;
 }
 
+
 body {
-    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
 }
+
 
 .heading {
+    text-align: left;
     padding: 5px;
-}
-
-input:focus:invalid {
-    border: 2px solid red;
 }
 
 .form {
@@ -95,7 +90,7 @@ input:focus:invalid {
     align-items: flex-start;
 }
 
-.form_element{
+.form-element{
     display: flex;
     width: 100%;
     max-width: 100%;
@@ -105,41 +100,42 @@ input:focus:invalid {
     border-radius: 10px;
 }
 
-.form_element input,
-.form_element select,
-.form_element datalist,
-.form_element textarea {
+.form-element input,
+.form-element select,
+.form-element datalist,
+.form-element textarea {
     box-sizing: border-box;
     width: 100%;
-    border: 1px solid rgb(209, 209, 209);
+    border: 1px solid rgb(209 209 209);
     border-radius: 10px;
     padding: 8px;
     font: inherit;
     
 }
 
-.form_element input,
-.form_element select {
+.form-element input,
+.form-element select {
     height: 40px;
 }
 
-.form_element textarea {
+.form-element textarea {
     height: 120px;
     resize: vertical;
 }
 
-.form_element select {
+
+.form-element select {
     padding-right: 12px;
 }
 
-.form_btn {
+.form-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 40px;
     background-color: #1e47fd;
-    color: #ffffff;
+    color: #fff;
     border-radius: 50px;
     border: none;
     appearance: none;
@@ -147,7 +143,7 @@ input:focus:invalid {
     font-weight: normal;
 }
 
-.form_element output{
+.form-element output{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -162,40 +158,35 @@ main {
     box-sizing: border-box;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid rgb(209, 209, 209);
+    border: 1px solid rgb(209 209 209);
     border-radius: 20px;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 16px;
-    box-sizing: border-box;
-}
-
-.form_element option{
+.form-element option {
     color: #282828;
     border-radius: 20px;
 }
 
-.form_element input:focus,
-.form_element select:focus,
-.form_element textarea:focus {
-    outline: 2px solid #216DE3;
-}
-
-
-.form_element input,
-.form_element select,
-.form_element label,
-.form_element output,
-.form_element textarea,
-.form_btn {
+.form-element input,
+.form-element select,
+.form-element label,
+.form-element output,
+.form-element textarea,
+.form-btn {
     font-size: clamp(14px, 4vw, 16px);
 }
 
-.form_element input::placeholder,
-.form_element textarea::placeholder {
+.form-element input::placeholder,
+.form-element textarea::placeholder {
     font-size: inherit;
+}
+
+input:focus:invalid {
+    border: 2px solid red;
+}
+
+.form-element input:focus,
+.form-element select:focus,
+.form-element textarea:focus {
+    outline: 2px solid #216DE3;
 }

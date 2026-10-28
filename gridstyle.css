@@ -15,12 +15,13 @@
 ======================================== */
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     min-height: 100vh;
     color: #20222b;
-    background-color: #eeeeee;
+    background-color: #eee;
+    
 }
 
 /* ========================================
@@ -80,32 +81,54 @@ button {
 ======================================== */
 
 /* Add your Grid or Flexbox styles here */
+.form-wrapper {
+    width: calc(100% - 40px);
+    max-width: 1024px;
+    margin: 20px auto;
+}
 
 .form{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: 20px auto;
-    border: 1px solid none;
     border-radius: 10px;
     padding: 20px;
     gap: 15px;
     max-width: 1024px;
-    width: calc(100% - 40px);
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
-.form_element,
-.form_btn{
+.form-element,
+.form-btn{
     display: grid;
     grid-column: 1/ span 12;
     gap: 5px;
 }
 
-.box{
+/* .ball-track {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.box {
     width: 50px;
     height: 50px;
-    background-color: greenyellow;
+    position: absolute;
+    background-color: rgb(255, 123, 47);
+    border-radius: 50%;
+    animation: box-move 5s linear infinite alternate;
 }
+
+@keyframes box-move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(100% - 40px);
+    }
+} */
 
 /* ========================================
    8. Components
@@ -134,12 +157,12 @@ output{
     justify-self: end;
 }
 
-.form_btn{
+.form-btn{
     display: flex;
-    background-color: rgb(0, 81, 255);
+    background-color: rgb(0 81 255);
     border: none;
     box-sizing: border-box;
-    color: #ffffff;
+    color: #fff;
     border-radius: 20px;
     height: 40px;
     justify-content: center;
@@ -154,7 +177,7 @@ output{
 /* Add media queries when needed */
 
 
-@media (min-width: 320px) {
+@media (width >= 320px) {
     label,
     select,
     input,
@@ -165,7 +188,7 @@ output{
     }
 }
 
-@media (min-width: 720px) {
+@media (width >= 720px) {
     label,
     select,
     input,
@@ -176,7 +199,7 @@ output{
     }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
     label,
     select,
     input,
@@ -191,7 +214,8 @@ output{
    10. Animations
 ======================================== */
 
-.form_btn p:hover {
+.form-btn p:hover {
     transform: rotate(50deg);
     transition: 1s;
 }
+

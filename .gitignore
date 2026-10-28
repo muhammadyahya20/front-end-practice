@@ -1,1 +1,6 @@
+
+# Installed npm packages
 node_modules/
+
+# Temporary lint reports
+stylelint-results.txt

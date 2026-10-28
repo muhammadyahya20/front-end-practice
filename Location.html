@@ -39,13 +39,13 @@
     <main>
         <form action="./submit" class="form">
 
-            <div class="form_element">
+            <div class="form-element">
             <label for="">Select the number of people</label>
             <input type="range" id="people" name="people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
             <output>4</output>
             </div>
             
-            <div class="form_element">
+            <div class="form-element">
                 <label for="location">Select location</label>
                 <input type="text id="location" name="location" list="locations">
                 <datalist id="locations">
@@ -54,21 +54,21 @@
                 </datalist>
             </div>
 
-            <div class="form_element">
+            <div class="form-element">
                 <label for="location2">Select location 2</label>
                 <select name="location2" id="location2">
                     <option value="" disabled selected>Please select</option>
                 </select>
             </div>
 
-            <div class="form_element">
+            <div class="form-element">
                 <label for="explain">Please explain</label>
                 <textarea name="explain" id="explain" cols="10" rows="10" maxlength="200" placeholder="Please explain" oninput="this.nextElementSibling.querySelector('span').textContent = this.maxLength - this.value.length"></textarea>
                 <output><span>200</span> maxlength</output>
             </div>
 
             
-            <button type="submit" class="form_btn" > Submit Now </button> 
+            <button type="submit" class="form-btn" > Submit Now </button> 
             
 
         </form>
